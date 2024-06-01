@@ -24,7 +24,6 @@ function App() {
           <Route path='users'>
             <Route index element={<UsersList />} />
           </Route>
-
         </Route>
       </Route>
     </Routes>
