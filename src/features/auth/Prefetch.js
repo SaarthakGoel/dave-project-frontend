@@ -21,4 +21,4 @@ const Prefetch = () => {
   return <Outlet /> 
 }
 
-export default Prefetch
+export default Prefetch;
