@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { useAddNewNotesMutation } from "./notesApiSlice"
+import { useAddNewNoteMutation } from "./notesApiSlice"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSave } from "@fortawesome/free-solid-svg-icons"
 
@@ -11,7 +11,7 @@ const NewNoteForm = ({ users }) => {
         isSuccess,
         isError,
         error
-    }] = useAddNewNotesMutation()
+    }] = useAddNewNoteMutation()
 
     const navigate = useNavigate()
 

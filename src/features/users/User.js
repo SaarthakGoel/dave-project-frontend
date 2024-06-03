@@ -32,6 +32,6 @@ const User = ({ userId }) => {
             </tr>
         )
 
-    } else return null;
+    } else return null
 }
 export default User

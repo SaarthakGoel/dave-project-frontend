@@ -3,14 +3,12 @@ import { selectAllUsers } from '../users/usersApiSlice'
 import NewNoteForm from './NewNoteForm'
 
 const NewNote = () => {
+    const users = useSelector(selectAllUsers)
 
-  const users = useSelector(selectAllUsers);
+    if (!users?.length) return <p>Not Currently Available</p>
 
-  if(!users?.length) return <p>Not currently Available</p>
+    const content = <NewNoteForm users={users} />
 
-  const content = <NewNoteForm users={users} />
-   
-  return content;
+    return content
 }
-
 export default NewNote
